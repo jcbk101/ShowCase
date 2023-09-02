@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "@dimen/_150sdp"
+        android:layout_height = "@dimen/_75sdp">
+
+
+    <View
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:background="@drawable/bubble_side_yellow_a"/>
+
+        <TextView
+                android:id = "@+id/tipText"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:gravity = "center_horizontal"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textColor = "#FFFFFF00"
+                android:textSize = "@dimen/_12ssp"
+                android:textStyle = "bold"
+                android:textAllCaps="true"
+                android:maxLines="1"
+                android:shadowColor="@android:color/black"
+                android:shadowRadius="6"
+                tools:text = "I can help!" />
+
+        <TextView
+                android:id = "@+id/tipSubText"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:gravity = "center_horizontal"
+                android:textColor = "#FF000000"
+                android:textSize = "@dimen/_10ssp"
+                android:textStyle = "bold"
+                android:maxLines="2"
+                android:layout_below="@id/tipText"
+                tools:text = "This is a three-step blocker. You should be aware." />
+
+</RelativeLayout>

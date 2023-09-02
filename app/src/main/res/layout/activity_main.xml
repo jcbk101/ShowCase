@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:clipChildren = "false"
+        tools:context = ".MainActivity">
+
+
+    <ImageView
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:contentDescription = "@null"
+            android:scaleType = "centerCrop"
+            app:srcCompat = "@drawable/night_time_1" />
+
+    <ImageView
+            android:id = "@+id/avatar1"
+            android:layout_width = "96dp"
+            android:layout_height = "96dp"
+            android:contentDescription = "@null"
+            android:scaleType = "fitXY"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:layout_constraintVertical_bias = ".2"
+            app:srcCompat = "@android:drawable/btn_star_big_on" />
+
+
+    <com.genesyseast.showcase.StarsEarnedBar
+            android:id = "@+id/starsToEarn"
+            android:layout_width = "0dp"
+            android:layout_height = "@dimen/_31sdp"
+            android:layout_gravity = "center"
+            android:background = "@drawable/progress_frame"
+            android:paddingStart = "@dimen/_4sdp"
+            android:paddingTop = "@dimen/_3sdp"
+            android:paddingEnd = "@dimen/_4sdp"
+            android:paddingBottom = "@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintDimensionRatio = "H,41:256"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:layout_constraintVertical_bias = ".05"
+            app:max = "4500"
+            app:progressDrawable = "@drawable/progress_yellow"
+            app:starPositions = "300,1900,3000"
+            app:tickMarkOff = "@drawable/progress_star_off"
+            app:tickMarkOn = "@drawable/star_big"
+            tools:progress = "1900" />
+
+    <!--
+        app:tickHeight = "@dimen/_20sdp"
+        app:tickWidth = "@dimen/_20sdp"
+    -->
+
+    <TextView
+            android:id = "@+id/helloWorld"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:background = "#FFFFFF00"
+            android:padding = "8dp"
+            android:text = "Hello World!"
+            android:textColor = "@android:color/black"
+            android:textSize = "16sp"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintLeft_toLeftOf = "parent"
+            app:layout_constraintRight_toRightOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent" />
+
+
+    <ImageView
+            android:id = "@+id/image1"
+            android:layout_width = "64dp"
+            android:layout_height = "64dp"
+            android:contentDescription = "@null"
+            android:scaleType = "fitXY"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toStartOf = "@id/image2"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:layout_constraintVertical_bias = ".8"
+            app:srcCompat = "@android:drawable/star_big_off" />
+
+    <ImageView
+            android:id = "@+id/image2"
+            android:layout_width = "80dp"
+            android:layout_height = "80dp"
+            android:contentDescription = "@null"
+            android:scaleType = "fitXY"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toEndOf = "@id/image1"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:layout_constraintVertical_bias = ".8"
+            app:srcCompat = "@android:drawable/star_big_on" />
+
+    <Button
+            android:id = "@+id/showButton"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Show Case"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:layout_constraintVertical_bias = ".95" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

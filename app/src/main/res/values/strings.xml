@@ -1,0 +1,4 @@
+<resources>
+    <string name = "touch_to_continue">Touch to continue…</string>
+    <string name = "app_name">ShowCase</string>
+</resources>

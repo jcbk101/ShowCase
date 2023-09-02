@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name = "ShowClass">
+        <attr name = "target" format = "reference" />
+    </declare-styleable>
+
+    <declare-styleable name = "StarsEarnedBar">
+        <attr name = "min" format = "integer" />
+        <attr name = "max" format = "integer" />
+        <attr name = "progress" format = "integer" />
+        <attr name = "progressDrawable" format = "reference" />
+        <attr name = "starPositions" format = "string" />
+        <attr name = "tickMarkOn" format = "reference" />
+        <attr name = "tickMarkOff" format = "reference" />
+        <attr name = "tickWidth" format = "dimension" />
+        <attr name = "tickHeight" format = "dimension" />
+    </declare-styleable>
+
+</resources>

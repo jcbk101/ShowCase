@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name = "full_Screen"
+           parent = "Theme.AppCompat.NoActionBar">
+        <item name = "windowNoTitle">true</item>
+        <item name = "windowActionBar">false</item>
+        <item name = "android:windowNoTitle">true</item>
+        <item name = "android:windowActionBar">false</item>
+        <item name = "android:windowFullscreen">true</item>
+        <item name = "android:windowContentOverlay">@null</item>
+        <item name = "android:background">@android:color/transparent</item>
+    </style>
+
+<!--
+    <style name = "full_Screen" parent = "Theme.AppCompat.Light.DarkActionBar">
+&lt;!&ndash;    <style name = "AppTheme" parent = "Theme.AppCompat.NoActionBar">&ndash;&gt;
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name = "colorPrimary">@color/colorPrimary</item>
+        <item name = "colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name = "colorAccent">@color/colorAccent</item>
+        <item name = "android:windowBackground">#00000000</item>
+    </style>
+-->
+
+</resources>
